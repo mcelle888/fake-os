@@ -21,7 +21,7 @@ footer {
   width: 6rem;
   background-color: rgb(45, 133, 32);
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "VT323", monospace;
   font-style: italic;
   justify-content: center;
   align-items: center;
@@ -43,14 +43,24 @@ footer {
   height: 100%;
   gap: 1rem;
   background-color: rgb(17, 134, 230);
-  width: 10rem;
+  width: 15rem;
   justify-content: space-between;
+  padding-left: 1.4rem;
+  border-left: 2px solid rgb(60, 120, 189);
 }
 
 .time-box {
   color: white;
   padding-right: 1rem;
   align-self: center;
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+}
+
+.icon-tray {
+  height: 80%;
+  justify-self: center;
+  padding-top: 0.2rem;
 }
 
 * {
