@@ -1,16 +1,18 @@
 // Display current time
 
-function getTime(time) {
-    let hour = time.getHours();
+function updateTime() {
+    const time = new Date()
+    let hour = time.getHours()
     let minutes = time.getMinutes()
-    const ampm = hour >= 12 ? 'pm' : 'am';
-    hour = hour % 12;
-    hour = hour ? hour : 12;
-    minutes = minutes < 10 ? '0'+ minutes : minutes;
-    const stringTime = hour + ':' + minutes + ' ' + ampm;
-    return stringTime
-
+    const ampm = hour >= 12 ? 'PM' : 'AM'
+    hour = hour % 12
+    hour = hour ? hour : 12
+    minutes = minutes < 10 ? '0' + minutes : minutes
+    const stringTime = hour + ':' + minutes + ' ' + ampm
+    document.getElementById("time").innerHTML = stringTime
 }
 
+updateTime()
 
-document.getElementById("time").innerHTML = getTime(new Date)
+
+setInterval(updateTime, 1000)
