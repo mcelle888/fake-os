@@ -1,0 +1,58 @@
+@use './partials/variables' as v;
+@use './partials/mixins.scss' as m;
+
+footer {
+    background-color: v.$main-blue;
+    display:flex;
+    flex-direction: row;
+    height: 2.5rem;
+    border-top: 3px solid v.$border-blue-two;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-container{
+    display: flex;
+    align-items: flex-end;
+    height: 2.6rem;
+    background-color: v.$border-blue-one;
+}
+
+.start-button {
+    display: flex;
+    height: 100%;
+    width: 6rem;
+    background-color: v.$button-green;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #0a5d39;
+    border-radius: 0px 5px 5px 0px;
+    border-color: #0a5d39;
+    padding-right: 2rem;
+    padding-left: 1.5rem;
+}
+
+
+.windows-icon {
+    height: 100%;
+}
+
+.tray-container {
+    display: flex;
+    height: 100%;
+    gap: 1rem;
+    background-color: v.$tray-blue;
+    width: 10rem;
+    justify-content: space-between;
+}
+
+.time-box {
+    color: white;
+    padding-right: 1rem;
+    align-self: center;
+}

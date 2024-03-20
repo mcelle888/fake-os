@@ -1,0 +1,78 @@
+footer {
+  background-color: rgb(37, 90, 217);
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+  border-top: 3px solid rgb(60, 120, 189);
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-end;
+  height: 2.6rem;
+  background-color: rgb(73, 143, 235);
+}
+
+.start-button {
+  display: flex;
+  height: 100%;
+  width: 6rem;
+  background-color: rgb(45, 133, 32);
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #0a5d39;
+  border-radius: 0px 5px 5px 0px;
+  border-color: #0a5d39;
+  padding-right: 2rem;
+  padding-left: 1.5rem;
+}
+
+.windows-icon {
+  height: 100%;
+}
+
+.tray-container {
+  display: flex;
+  height: 100%;
+  gap: 1rem;
+  background-color: rgb(17, 134, 230);
+  width: 10rem;
+  justify-content: space-between;
+}
+
+.time-box {
+  color: white;
+  padding-right: 1rem;
+  align-self: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-image: url(../assets/xp-background.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/*# sourceMappingURL=style.css.map */
