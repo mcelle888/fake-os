@@ -1,0 +1,42 @@
+@use './partials/variables' as v;
+@use './partials/mixins.scss' as m;
+
+.left-container {
+    @include m.design-box;
+    height: 100%;
+    width: 30rem;
+}
+
+.icon-background {
+    @include m.design-box-3;
+    height: 45%;
+
+}
+
+.menu-container {
+    @include m.design-box-2;
+    height: 45%;
+}
+
+.application-container {
+    height: 90%;
+    width: 80%;
+    border: 2px black solid; 
+    position: absolute;
+    display: flex;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.icon-background {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

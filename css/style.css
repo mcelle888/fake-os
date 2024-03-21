@@ -8,13 +8,6 @@ footer {
   justify-content: space-between;
 }
 
-.footer-container {
-  display: flex;
-  align-items: flex-end;
-  height: 2.6rem;
-  background-color: rgb(73, 143, 235);
-}
-
 .start-button {
   display: flex;
   height: 100%;
@@ -63,6 +56,45 @@ footer {
   padding-top: 0.2rem;
 }
 
+.left-container {
+  border: 2px solid red;
+  height: 100%;
+  width: 30rem;
+}
+
+.icon-background {
+  border: 2px solid rgb(70, 226, 218);
+  height: 45%;
+}
+
+.menu-container {
+  border: 2px solid black;
+  height: 45%;
+}
+
+.application-container {
+  height: 90%;
+  width: 80%;
+  border: 2px black solid;
+  position: absolute;
+  display: flex;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.icon-background {
+  display: grid;
+  width: 50%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -77,8 +109,8 @@ body {
 main {
   display: flex;
   justify-content: center;
-  height: 100%;
-  background-image: url(../assets/xp-background.webp);
+  height: 96%;
+  background-image: url(../assets/xp-background2.webp);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   flex-direction: column;

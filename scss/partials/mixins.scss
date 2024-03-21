@@ -1,5 +1,17 @@
 @use './variables.scss' as v;
 
+@mixin design-box {
+    border: 2px solid red; 
+}
+
+@mixin design-box-2 {
+    border: 2px solid black; 
+}
+
+@mixin design-box-3 {
+    border: 2px solid rgb(70, 226, 218); 
+}
+
 @mixin pixel-border {
     box-shadow:   -4px 0 0 0 v.$button-green,
     4px 0 0 0 #0a5d39,

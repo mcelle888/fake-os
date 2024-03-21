@@ -11,12 +11,6 @@ footer {
     justify-content: space-between;
 }
 
-.footer-container{
-    display: flex;
-    align-items: flex-end;
-    height: 2.6rem;
-    background-color: v.$border-blue-one;
-}
 
 .start-button {
     display: flex;
@@ -54,6 +48,7 @@ footer {
     border-left: 2px solid v.$border-blue-two;
 }
 
+
 .time-box {
     color: white;
     padding-right: 1rem;
@@ -67,3 +62,4 @@ footer {
     justify-self: center;
     padding-top: 0.2rem;
 }
+
