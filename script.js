@@ -16,3 +16,19 @@ updateTime()
 
 
 setInterval(updateTime, 1000)
+
+
+
+const startButton = document.querySelector('.start-button')
+const menuContainer = document.querySelector('.menu-container')
+
+startButton.addEventListener('click', function () {
+    menuContainer.classList.toggle('show-menu')
+})
+
+// function to hide menu if user clicks outside the menu container
+document.body.addEventListener('click', function (event) {
+    if (!menuContainer.contains(event.target) && event.target !== startButton) {
+        menuContainer.classList.remove('show-menu')
+    }
+})

@@ -18,3 +18,14 @@
     0 -4px 0 0 #0a5d39,
     0 4px 0 0 #0a5d39;
 }
+
+@mixin blue-gradient {
+    background: rgb(75,147,229);
+    background: linear-gradient(0deg, rgba(75,147,229,1) 0%, rgba(32,114,211,1) 32%, rgba(14,100,203,1) 100%);
+}
+
+@mixin blue-gradient-reverse {
+    background: rgb(14,100,203);
+    background: linear-gradient(0deg, rgba(14,100,203,1) 0%, rgba(32,114,211,1) 32%, rgba(75,147,229,1) 100%);
+}
+

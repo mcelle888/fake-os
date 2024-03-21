@@ -18,12 +18,12 @@ footer {
     width: 6rem;
     background-color: v.$button-green;
     color: white;
-    font-family: "VT323", monospace;
     font-style: italic;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    font-size: 1rem;
+    font-family: 'supernatural_10_01', sans-serif;
+    font-size: 1.2rem;
     border: 2px solid #0a5d39;
     border-radius: 0px 5px 5px 0px;
     border-color: #0a5d39;
@@ -43,11 +43,10 @@ footer {
     background-color: v.$tray-blue;
     width: 15rem;
     justify-content: space-between;
-    // align-items: center;
     padding-left: 1.4rem;
     border-left: 2px solid v.$border-blue-two;
-}
 
+}
 
 .time-box {
     color: white;
@@ -57,9 +56,14 @@ footer {
     font-size: 1.2rem;
 }
 
+.icon-tray-container {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
 .icon-tray {
-    height: 80%;
-    justify-self: center;
+    height: 70%;
     padding-top: 0.2rem;
 }
 
