@@ -79,16 +79,6 @@ footer {
   height: 65%;
 }
 
-.application-container {
-  height: 90%;
-  width: 80%;
-  border: 2px black solid;
-  position: absolute;
-  display: flex;
-  align-self: center;
-  margin-bottom: 1rem;
-}
-
 .icon-background {
   display: grid;
   width: 50%;
@@ -254,6 +244,112 @@ footer {
 
 .right-menu-icon {
   height: 30px;
+}
+
+.icon-clicked {
+  background-color: rgba(73, 143, 235, 0.5);
+}
+
+.application-container {
+  display: none;
+  width: 100%;
+  align-self: center;
+  height: 70%;
+  width: 50%;
+  border: 2px black solid;
+  position: absolute;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+.app-menu {
+  background-color: rgb(37, 90, 217);
+  display: flex;
+  flex-direction: column;
+  height: 2rem;
+  width: 100%;
+}
+
+.application-sub-container {
+  height: 50%;
+}
+
+.app-menu-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.app-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  width: 100%;
+  padding: 0 2rem 0 2rem;
+}
+
+.tab-item {
+  display: flex;
+  background-color: rgba(69, 117, 230, 0.5);
+  border: 2px inset rgb(17, 134, 230);
+  width: 15rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator-container {
+  border-radius: 3px;
+  padding: 1rem;
+  width: 100%;
+  background-color: rgb(236, 233, 216);
+}
+
+.calculator-display {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+  height: 3rem;
+  border: 1px solid rgb(62, 62, 199);
+}
+
+.button-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator-button {
+  width: 3rem;
+  height: 3rem;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f3f3ee;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.calculator-button:hover {
+  background-color: #e0e0e0;
+}
+
+.calculator-button:active {
+  background-color: #d4d4d4;
+}
+
+.application-container.visible {
+  display: block;
+  width: 30%;
 }
 
 * {
