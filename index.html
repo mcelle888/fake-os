@@ -283,7 +283,38 @@
             <div class="time-box">
                 <p id="time"></p>
             </div>
-     
     </footer>
+    <div class="music-container">
+        <div class="music-player">
+        <nav class="music-nav">
+            <div class="square-button">
+                <img class="back" src="./assets/music-icons/left-angle.png" alt="back-button">
+            </div>
+            <div class="square-button">
+                <img class="back" src="./assets/music-icons/menu.png" alt="menu-button">
+            </div>
+        </nav>
+
+        <img class="song-img" src="./assets/music-icons/album.jpg" alt="album">
+        <h2>Can't Help Falling in Love</h2>
+        <p>Elvis Presley</p>
+
+        <audio id="song">
+            <source src="./assets/music-icons/elvis.mp3" type="audio/mpeg">
+        </audio>
+        <input id="progress" type="range" value="0">
+
+        <div class="music-controls">
+            <div>
+                <img class="music-controls-back" src="./assets/music-icons/previous.png" alt="previous">
+                <img onclick="playPause()" class="music-controls-play" id="controlMusic" src="./assets/music-icons/play.png" alt="previous">
+                <img class="music-controls-next" src="./assets/music-icons/forward.png" alt="previous">
+            </div>
+        </div>
+
+        </div>
+    </div>
+    
+
 </body>
 </html>
