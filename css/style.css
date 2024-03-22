@@ -48,6 +48,7 @@ footer {
   align-self: center;
   font-family: "VT323", monospace;
   font-size: 1.2rem;
+  width: 5rem;
 }
 
 .icon-tray-container {
@@ -266,7 +267,7 @@ footer {
   background-color: rgb(37, 90, 217);
   display: flex;
   flex-direction: column;
-  height: 2rem;
+  height: 3.5rem;
   width: 100%;
 }
 
@@ -283,7 +284,23 @@ footer {
 .app-buttons {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 0rem;
+  padding: 0.2rem;
+}
+
+.app-buttons > button {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.2rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-family: "PF Tempesta Seven", sans-serif;
+  color: white;
+  background-color: rgb(60, 120, 189);
+}
+
+#close {
+  background-color: #e56240;
 }
 
 .tabs-container {
@@ -304,6 +321,75 @@ footer {
   justify-content: center;
 }
 
+.menu-bar {
+  border-bottom: 2px solid black;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(233, 234, 218);
+  color: black;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 0.4rem;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: grey;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: grey;
+  width: 45%;
+  z-index: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subnav-content li {
+  display: flex;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem;
+}
+
+.subnav-content li:hover {
+  background-color: #eee;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subnav:hover .subnav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subnav-content:hover {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .calculator-container {
   border-radius: 3px;
   padding: 1rem;
@@ -318,6 +404,7 @@ footer {
   font-size: 16px;
   height: 3rem;
   border: 1px solid rgb(62, 62, 199);
+  font-family: "supernatural_10_01", sans-serif;
 }
 
 .button-box {
@@ -335,8 +422,8 @@ footer {
   border-radius: 5px;
   background-color: #f3f3ee;
   cursor: pointer;
-  font-size: 16px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.7rem;
+  font-family: "PF Tempesta Seven", sans-serif;
 }
 
 .calculator-button:hover {
@@ -349,7 +436,7 @@ footer {
 
 .application-container.visible {
   display: block;
-  width: 30%;
+  width: 15%;
 }
 
 * {
@@ -368,7 +455,7 @@ main {
   display: flex;
   justify-content: center;
   height: 96%;
-  background-image: url(../assets/xp-background2.webp);
+  background-image: url(../assets/minecraft.webp);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   flex-direction: column;

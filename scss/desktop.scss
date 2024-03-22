@@ -196,6 +196,7 @@
     background-color:rgb(73, 143, 235, 0.5);
 }
 
+// Hidden application container
 
 .application-container {
     display: none; 
@@ -213,7 +214,7 @@
     background-color: v.$main-blue;
     display: flex;
     flex-direction: column;
-    height: 2rem;
+    height: 3.5rem;
     width: 100%;
 }
 
@@ -227,19 +228,38 @@
     justify-content: space-between;
 }
 
+// Application open/close buttons
 .app-buttons {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 0rem;
+    padding: 0.2rem;
 }
 
+.app-buttons > button {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 0.2rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-family: 'PF Tempesta Seven', sans-serif;
+    color: white;
+    background-color: v.$border-blue-two;
+}
+
+#close {
+    background-color: #e56240;
+}
+
+
+
+// TABS on taskbar
 .tabs-container {
     display: flex;
     flex-direction: row;
     align-content: flex-start;
     width: 100%;
     padding: 0 2rem 0 2rem;
-    
 }
 
 .tab-item {
@@ -251,3 +271,82 @@
     align-items: center;
     justify-content: center;
 }
+
+// Navbar for Applications
+
+.menu-bar{
+    border-bottom: 2px solid black;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(233 234 218);
+    color: black;
+  }
+  
+
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 0.4rem;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: grey;
+  }
+  
+
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: grey;
+    width: 45%;
+    z-index: 1;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .subnav-content li {
+    display: flex;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 0.2rem;
+    
+  }
+  
+
+  .subnav-content li:hover {
+    background-color: #eee;
+    color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+  
+
+  .subnav:hover .subnav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subnav-content:hover {
+    display: flex;
+    flex-direction: row-reverse;
+  }
