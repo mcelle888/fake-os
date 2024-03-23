@@ -3,8 +3,7 @@
 @use './partials/mixins.scss' as m;
 
 .gallery-header {
-    display: flex;
-    justify-content: center;
+    @include m.center-items;
     width: 100%;
     gap: 1rem;
     margin-top: 1rem;
@@ -19,11 +18,20 @@
     font-size: 1.1rem;
 }
 
+.gallery-header > button:hover{
+    background-color: grey;
+    color: white;
+}
+
 .gallery-img {
     height: 5rem;
     width: 5rem;
     border: 2px solid black;
     margin: 1rem;
+}
+
+.gallery-img:hover {
+    border: 3px solid blue;
 }
 
 .view-img {
@@ -33,10 +41,8 @@
 }
 
 .gallery-box {
-    display: flex;
-    justify-content: center; 
+    @include m.center-items;
     text-align: center;
-    align-items: center;
 }
 
 .gallery-container {

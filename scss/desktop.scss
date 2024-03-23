@@ -29,9 +29,7 @@
 }
 
 .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include m.center-items;
     flex-direction: column;
 }
 
@@ -89,20 +87,18 @@
 }
 
 .left-menu {
-    // border: 2px solid black; 
     width: 50%;
     height: 100%;
     background-color: white;
 }
 
 .right-menu {
-    // border: 2px solid black;
     width: 50%;
     background-color: v.$light-blue;
     height: 100%;
 }
 
-#menu-footer {
+#menuFooter {
     display: flex;
     justify-content: end;
     @include m.blue-gradient-reverse; 
@@ -111,7 +107,7 @@
     padding-right: 0.5rem;
 }
 
-#menu-footer > p {
+#menuFooter > p {
     align-self: center;
 }
 
@@ -140,18 +136,15 @@
     }
 }
 
-#icon-description {
+#iconDescription {
     font-size: 0.8rem;
 
 }
 
 .programs {
-    display: flex;
-    justify-content: center;
     height: 2.5rem;
-    display: flex;
-    align-items: center;
     gap: 1rem;
+    @include m.center-items;
 }
 
 .programs:hover {
@@ -159,9 +152,8 @@
 }
 
 
-#green-programs {
-    display: flex;
-    align-items: center;
+#greenPrograms {
+    @include m.center-items;
     height: 1.8rem;
 }
 
@@ -249,6 +241,7 @@
     background-color: v.$border-blue-two;
 }
 
+// close button on apps
 #close {
     background-color: #e56240;
 }
@@ -264,21 +257,15 @@
 }
 
 .tab-item {
-    display: flex;
     background-color: rgba(69, 117, 230, 0.5);
     border: 2px inset v.$tray-blue;
     width: 15rem;
     color: white;
-    align-items: center;
-    justify-content: center;
+    @include m.center-items;
+    font-family: "supernatural_10_01", sans-serif;
 }
 
 // Navbar for Applications
-
-.menu-bar{
-    // border-bottom: 2px solid black;
-}
-
 .navbar {
     overflow: hidden;
     background-color: rgb(233 234 218);
@@ -286,7 +273,6 @@
     border-bottom: 2px rgb(0, 0, 0) solid; 
   }
   
-
   .subnav {
     float: left;
     overflow: hidden;
@@ -330,7 +316,6 @@
     padding: 0.2rem;
     
   }
-  
 
   .subnav-content li:hover {
     background-color: #eee;
@@ -338,9 +323,8 @@
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    
   }
-  
+
 
   .subnav:hover .subnav-content {
     display: flex;

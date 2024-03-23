@@ -90,8 +90,8 @@ footer {
 
 .icons {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -159,7 +159,7 @@ footer {
   height: 100%;
 }
 
-#menu-footer {
+#menuFooter {
   display: flex;
   justify-content: end;
   background: rgb(14, 100, 203);
@@ -169,7 +169,7 @@ footer {
   padding-right: 0.5rem;
 }
 
-#menu-footer > p {
+#menuFooter > p {
   align-self: center;
 }
 
@@ -198,26 +198,26 @@ footer {
   font-weight: 800;
 }
 
-#icon-description {
+#iconDescription {
   font-size: 0.8rem;
 }
 
 .programs {
-  display: flex;
-  justify-content: center;
   height: 2.5rem;
+  gap: 1rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
 }
 
 .programs:hover {
   background-color: rgba(73, 143, 235, 0.7);
 }
 
-#green-programs {
+#greenPrograms {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 1.8rem;
 }
 
@@ -314,13 +314,14 @@ footer {
 }
 
 .tab-item {
-  display: flex;
   background-color: rgba(69, 117, 230, 0.5);
   border: 2px inset rgb(17, 134, 230);
   width: 15rem;
   color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "supernatural_10_01", sans-serif;
 }
 
 .navbar {
@@ -547,6 +548,7 @@ footer {
 
 .gallery-header {
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 100%;
   gap: 1rem;
@@ -562,11 +564,20 @@ footer {
   font-size: 1.1rem;
 }
 
+.gallery-header > button:hover {
+  background-color: grey;
+  color: white;
+}
+
 .gallery-img {
   height: 5rem;
   width: 5rem;
   border: 2px solid black;
   margin: 1rem;
+}
+
+.gallery-img:hover {
+  border: 3px solid blue;
 }
 
 .view-img {
@@ -577,9 +588,9 @@ footer {
 
 .gallery-box {
   display: flex;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  align-items: center;
 }
 
 .gallery-container {
@@ -610,7 +621,7 @@ main {
   display: flex;
   justify-content: center;
   height: 96%;
-  background-image: url(../assets/background.webp);
+  background-image: url(../assets/xp-background.webp);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   flex-direction: column;
