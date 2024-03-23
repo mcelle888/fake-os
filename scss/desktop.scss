@@ -12,7 +12,6 @@
 .icon-background {
     @include m.design-box-3;
     height: 35%;
-
 }
 
 .menu-container {
@@ -41,7 +40,6 @@
   
 .show-menu  {
     display: flex;
-    // box-shadow: 1px 1px 1px 1px black;
     border-style: outset;
     border-radius: 8px;
   }
@@ -89,14 +87,14 @@
 }
 
 .left-menu {
-    border: 2px solid black; 
+    // border: 2px solid black; 
     width: 50%;
     height: 100%;
     background-color: white;
 }
 
 .right-menu {
-    border: 2px solid black;
+    // border: 2px solid black;
     width: 50%;
     background-color: v.$light-blue;
     height: 100%;
@@ -204,7 +202,7 @@
     align-self: center;
     height: 70%;
     width: 50%;
-    border: 2px black solid; 
+    // border: 2px black solid; 
     position: absolute;
     margin-bottom: 4rem;
     color: white;
@@ -275,7 +273,7 @@
 // Navbar for Applications
 
 .menu-bar{
-    border-bottom: 2px solid black;
+    // border-bottom: 2px solid black;
 }
 
 .navbar {

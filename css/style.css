@@ -146,14 +146,12 @@ footer {
 }
 
 .left-menu {
-  border: 2px solid black;
   width: 50%;
   height: 100%;
   background-color: white;
 }
 
 .right-menu {
-  border: 2px solid black;
   width: 50%;
   background-color: rgb(211, 229, 251);
   height: 100%;
@@ -257,7 +255,6 @@ footer {
   align-self: center;
   height: 70%;
   width: 50%;
-  border: 2px black solid;
   position: absolute;
   margin-bottom: 4rem;
   color: white;
@@ -320,10 +317,6 @@ footer {
   color: white;
   align-items: center;
   justify-content: center;
-}
-
-.menu-bar {
-  border-bottom: 2px solid black;
 }
 
 .navbar {
@@ -612,6 +605,7 @@ main {
   background-repeat: no-repeat;
   flex-direction: column;
   justify-content: flex-end;
+  font-family: "supernatural_10_01", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
