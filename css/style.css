@@ -272,7 +272,8 @@ footer {
 }
 
 .application-sub-container {
-  height: 50%;
+  height: 60%;
+  background-color: white;
 }
 
 .app-menu-tabs {
@@ -342,7 +343,7 @@ footer {
   border: none;
   outline: none;
   color: black;
-  padding: 0.4rem;
+  padding: 0 0.4rem;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -544,6 +545,53 @@ footer {
   transform: scale(120%);
 }
 
+.gallery-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.gallery-header > button {
+  background-color: rgb(236, 233, 216);
+  height: 2.5rem;
+  align-self: center;
+  width: 5rem;
+  font-family: "supernatural_10_01", sans-serif;
+  font-size: 1.1rem;
+}
+
+.gallery-img {
+  height: 5rem;
+  width: 5rem;
+  border: 2px solid black;
+  margin: 1rem;
+}
+
+.view-img {
+  height: 35rem;
+  width: 35rem;
+  border: 2px solid black;
+}
+
+.gallery-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.gallery-container {
+  width: 100%;
+  background-color: rgb(236, 233, 216);
+}
+
+.img-container {
+  color: black;
+  font-family: "supernatural_10_01", sans-serif;
+  margin-bottom: 2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -553,14 +601,13 @@ footer {
 body {
   height: 100vh;
   width: 100%;
-  font-family: "supernatural_10_01", sans-serif;
 }
 
 main {
   display: flex;
   justify-content: center;
   height: 96%;
-  background-image: url(../assets/minecraft.webp);
+  background-image: url(../assets/background.webp);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   flex-direction: column;

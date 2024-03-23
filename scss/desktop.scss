@@ -219,7 +219,8 @@
 }
 
 .application-sub-container {
-    height: 50%;
+    height: 60%;
+    background-color: white;
 }
 
 .app-menu-tabs {
@@ -250,7 +251,6 @@
 #close {
     background-color: #e56240;
 }
-
 
 
 // TABS on taskbar
@@ -296,7 +296,7 @@
     border: none;
     outline: none;
     color: black;
-    padding: 0.4rem;
+    padding: 0 0.4rem;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
