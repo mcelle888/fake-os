@@ -7,6 +7,7 @@
     justify-content: center;
     width: 100%;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .gallery-header > button {
@@ -41,6 +42,8 @@
 .gallery-container {
     width: 100%;
     background-color: v.$main-grey;
+    height: 100%;
+    border: 2px rgb(0, 0, 0) solid; 
 }
 
 .img-container {

@@ -7,11 +7,13 @@
     width: 30rem;
     display: flex;
     flex-direction: column;
+    border: none;
 }
 
 .icon-background {
     @include m.design-box-3;
     height: 35%;
+    border: none;
 }
 
 .menu-container {
@@ -202,7 +204,7 @@
     align-self: center;
     height: 70%;
     width: 50%;
-    // border: 2px black solid; 
+    border-bottom: none;
     position: absolute;
     margin-bottom: 4rem;
     color: white;
@@ -212,8 +214,9 @@
     background-color: v.$main-blue;
     display: flex;
     flex-direction: column;
-    height: 3.5rem;
+    height: 3rem;
     width: 100%;
+    border: 2px rgb(0, 0, 0) solid; 
 }
 
 .application-sub-container {
@@ -280,6 +283,7 @@
     overflow: hidden;
     background-color: rgb(233 234 218);
     color: black;
+    border-bottom: 2px rgb(0, 0, 0) solid; 
   }
   
 

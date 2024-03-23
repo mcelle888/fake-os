@@ -68,11 +68,13 @@ footer {
   width: 30rem;
   display: flex;
   flex-direction: column;
+  border: none;
 }
 
 .icon-background {
   border: 2px solid rgb(70, 226, 218);
   height: 35%;
+  border: none;
 }
 
 .menu-container {
@@ -255,6 +257,7 @@ footer {
   align-self: center;
   height: 70%;
   width: 50%;
+  border-bottom: none;
   position: absolute;
   margin-bottom: 4rem;
   color: white;
@@ -264,8 +267,9 @@ footer {
   background-color: rgb(37, 90, 217);
   display: flex;
   flex-direction: column;
-  height: 3.5rem;
+  height: 3rem;
   width: 100%;
+  border: 2px rgb(0, 0, 0) solid;
 }
 
 .application-sub-container {
@@ -323,6 +327,7 @@ footer {
   overflow: hidden;
   background-color: rgb(233, 234, 218);
   color: black;
+  border-bottom: 2px rgb(0, 0, 0) solid;
 }
 
 .subnav {
@@ -389,6 +394,7 @@ footer {
   padding: 1rem;
   width: 100%;
   background-color: rgb(236, 233, 216);
+  border: 2px rgb(0, 0, 0) solid;
 }
 
 .calculator-display {
@@ -440,6 +446,7 @@ footer {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  border: 2px rgb(0, 0, 0) solid;
 }
 
 .music-player {
@@ -543,6 +550,7 @@ footer {
   justify-content: center;
   width: 100%;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .gallery-header > button {
@@ -577,6 +585,8 @@ footer {
 .gallery-container {
   width: 100%;
   background-color: rgb(236, 233, 216);
+  height: 100%;
+  border: 2px rgb(0, 0, 0) solid;
 }
 
 .img-container {
