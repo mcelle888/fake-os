@@ -3,7 +3,7 @@ A recreation of an old operating system on the web! Features the classic Windows
 
 ![Screenshot](./assets/desktop.png)
 
-Deployed Link: [FakeOS--WindowsXP](https://fake-os-seven.vercel.app/)
+Deployed Link: [FakeOS--WindowsXP](https://fake-os-three.vercel.app/)
 
 
 ## Key Features
