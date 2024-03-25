@@ -1,4 +1,3 @@
-// double click calc icon: 
 export function createCalc() {
     const calculatorIcon = document.querySelector('.icons--calculator')
     const tabsContainer = document.querySelector('.tabs-container')
@@ -14,9 +13,8 @@ export function createCalc() {
         const appName = document.querySelector('.app-name')
         appName.textContent = 'Calculator'
     
-        // Check if the calculator container is already created  (to stop multiple calculator elements from being made)
+        // Check if the calculator container is already created (to stop multiple calculator elements from being made)
         if (!document.querySelector('.calculator-container')) {
-            // Create a new div element for the calculator
             const calculatorDiv = document.createElement('div')
             calculatorDiv.classList.add('calculator-container')
     
@@ -47,7 +45,7 @@ export function createCalc() {
                     button.addEventListener('click', () => {
                         if (buttonText === '=') {
                             try {
-                                display.value = eval(display.value)
+                                display.value = calculate(display.value)
                             } catch (error) {
                                 display.value = 'Error'
                             }
@@ -79,3 +77,29 @@ export function createCalc() {
     })
 }
 
+// Function for calculator
+function calculate(expression) {
+    const regex = /(\d+\.?\d*)([*/+-])(\d+\.?\d*)/
+    const match = expression.match(regex)
+    if (!match) throw new Error('Invalid expression')
+    
+    const num1 = parseFloat(match[1])
+    const operator = match[2]
+    const num2 = parseFloat(match[3])
+
+    switch (operator) {
+        case '+':
+            return num1 + num2
+        case '-':
+            return num1 - num2
+        case '*':
+            return num1 * num2
+        case '/':
+            if (num2 === 0) throw new Error('Invalid')
+            return num1 / num2
+        default:
+            throw new Error('Must be operator')
+    }
+}
+
+export default createCalc
