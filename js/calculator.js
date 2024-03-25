@@ -25,7 +25,8 @@ export function createCalc() {
             display.className = 'calculator-display';
     
             calculatorDiv.appendChild(display)
-    
+            
+            // create buttons
             const buttons = [
                 ['/', '7', '8', '9'],
                 ['*', '4', '5', '6'],

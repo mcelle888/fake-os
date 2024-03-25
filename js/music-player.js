@@ -9,7 +9,7 @@ export function createMusicPlayer() {
         const applicationContainer = document.querySelector('.application-container')
         applicationContainer.classList.toggle('visible') 
         applicationContainer.style.width = '40%'
-        applicationContainer.style.height = '70%'
+        applicationContainer.style.height = '80%'
     
         // change app title
         const appName = document.querySelector('.app-name')
@@ -70,7 +70,7 @@ export function createMusicPlayer() {
             sourceElement.src = './assets/music-icons/elvis.mp3'
             sourceElement.type = 'audio/mpeg'
             audioElement.appendChild(sourceElement)
-            audioElement.volume = 0.01;  
+            audioElement.volume = 0.02  
     
             // progress bar
             const inputElement = document.createElement('input')
@@ -162,15 +162,19 @@ export function createMusicPlayer() {
             function playPause() {
                 const controlMusic = document.getElementById('controlMusic')
                 const song = document.getElementById('song')
+                const playButtonImg = './assets/music-icons/play.png'
+                const pauseButtonImg = './assets/music-icons/pause.png'
             
-                if (controlMusic.classList.contains("music-controls-pause")) {
+                if (controlMusic.classList.contains('music-controls-pause')) {
                     song.pause()
                     controlMusic.classList.remove('music-controls-pause')
                     controlMusic.classList.add('music-controls-play')
+                    controlMusic.src = playButtonImg 
                 } else {
                     song.play()
                     controlMusic.classList.add('music-controls-pause')
                     controlMusic.classList.remove('music-controls-play')
+                    controlMusic.src = pauseButtonImg 
                 }
             }
             

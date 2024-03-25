@@ -19,7 +19,6 @@ function updateTime() {
 updateTime()
 setInterval(updateTime, 1000)
 
-
 // CREATES calc, music and gallery app functions
 createCalc()
 createMusicPlayer()
