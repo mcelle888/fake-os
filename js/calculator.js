@@ -17,13 +17,12 @@ export function createCalc() {
         if (!document.querySelector('.calculator-container')) {
             const calculatorDiv = document.createElement('div')
             calculatorDiv.classList.add('calculator-container')
-    
-            const display = document.createElement('input')
-            Object.assign(display, {
-                type: 'text',
-                disabled: true,
-                className: 'calculator-display'
-            })
+            
+            // top display on calc
+            const display = document.createElement('input');
+            display.type = 'text';
+            display.disabld = true;
+            display.className = 'calculator-display';
     
             calculatorDiv.appendChild(display)
     
