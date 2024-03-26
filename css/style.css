@@ -1,0 +1,632 @@
+footer {
+  background-color: rgb(37, 90, 217);
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+  border-top: 3px solid rgb(60, 120, 189);
+  width: 100%;
+  justify-content: space-between;
+}
+
+.start-button {
+  display: flex;
+  height: 100%;
+  width: 6rem;
+  background-color: rgb(45, 133, 32);
+  color: white;
+  font-style: italic;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "supernatural_10_01", sans-serif;
+  font-size: 1.2rem;
+  border: 2px solid #0a5d39;
+  border-radius: 0px 5px 5px 0px;
+  border-color: #0a5d39;
+  padding-right: 2rem;
+  padding-left: 1.5rem;
+}
+
+.windows-icon {
+  height: 100%;
+}
+
+.tray-container {
+  display: flex;
+  height: 100%;
+  gap: 1rem;
+  background-color: rgb(17, 134, 230);
+  width: 15rem;
+  justify-content: space-between;
+  padding-left: 1.4rem;
+  border-left: 2px solid rgb(60, 120, 189);
+}
+
+.time-box {
+  color: white;
+  padding-right: 1rem;
+  align-self: center;
+  font-family: "VT323", monospace;
+  font-size: 1.2rem;
+  width: 5rem;
+}
+
+.icon-tray-container {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.icon-tray {
+  height: 70%;
+  padding-top: 0.2rem;
+}
+
+.left-container {
+  border: 2px solid red;
+  height: 100%;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.icon-background {
+  border: 2px solid rgb(70, 226, 218);
+  height: 35%;
+  border: none;
+}
+
+.menu-container {
+  border: 2px solid black;
+  height: 65%;
+}
+
+.icon-background {
+  display: grid;
+  width: 50%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu-container {
+  display: none;
+  z-index: 1;
+}
+
+.show-menu {
+  display: flex;
+  border-style: outset;
+  border-radius: 8px;
+}
+
+.menu-header {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu-heading {
+  display: flex;
+  height: 5rem;
+  background: rgb(75, 147, 229);
+  background: linear-gradient(0deg, rgb(75, 147, 229) 0%, rgb(32, 114, 211) 32%, rgb(14, 100, 203) 100%);
+  padding: 0.2rem;
+  align-items: center;
+  gap: 1rem;
+  padding-left: 0.4rem;
+  color: white;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-heading > p {
+  text-shadow: 5px 5px 14px rgb(43, 40, 187);
+}
+
+#pfp {
+  height: 88%;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu-box {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.left-menu {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+
+.right-menu {
+  width: 50%;
+  background-color: rgb(211, 229, 251);
+  height: 100%;
+}
+
+#menuFooter {
+  display: flex;
+  justify-content: end;
+  background: rgb(14, 100, 203);
+  background: linear-gradient(0deg, rgb(14, 100, 203) 0%, rgb(32, 114, 211) 32%, rgb(75, 147, 229) 100%);
+  height: 4rem;
+  color: white;
+  padding-right: 0.5rem;
+}
+
+#menuFooter > p {
+  align-self: center;
+}
+
+.left-one-container {
+  border-bottom: 1px solid #a0b4cd;
+  padding-bottom: 0.6rem;
+}
+
+.left-one-sub-container {
+  display: flex;
+  height: 2.2rem;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+  padding: 0.6rem 0 0 0.5rem;
+}
+
+.left-one-sub-container:hover {
+  background-color: rgba(73, 143, 235, 0.7);
+}
+
+.icon-title {
+  display: flex;
+  align-items: center;
+}
+.icon-title--bold {
+  font-weight: 800;
+}
+
+#iconDescription {
+  font-size: 0.8rem;
+}
+
+.programs {
+  height: 2.5rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.programs:hover {
+  background-color: rgba(73, 143, 235, 0.7);
+}
+
+#greenPrograms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.8rem;
+}
+
+.programs > p {
+  display: flex;
+  align-items: center;
+}
+
+.right-one-container {
+  border-bottom: 1px solid #a0b4cd;
+  padding-bottom: 1rem;
+}
+
+.right-one-sub-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem 0 0 0.3rem;
+  font-size: 0.85rem;
+}
+
+.right-one-sub-container:hover {
+  background-color: rgba(73, 143, 235, 0.7);
+}
+
+.right-menu-icon {
+  height: 30px;
+}
+
+.icon-clicked {
+  background-color: rgba(73, 143, 235, 0.5);
+}
+
+.application-container {
+  display: none;
+  width: 100%;
+  align-self: center;
+  height: 70%;
+  width: 50%;
+  border-bottom: none;
+  position: absolute;
+  margin-bottom: 4rem;
+  color: white;
+}
+
+.app-menu {
+  background-color: rgb(37, 90, 217);
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  width: 100%;
+  border: 2px rgb(0, 0, 0) solid;
+}
+
+.application-sub-container {
+  height: 60%;
+  background-color: white;
+}
+
+.app-menu-tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.app-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+  padding: 0.2rem;
+}
+
+.app-buttons > button {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.2rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-family: "PF Tempesta Seven", sans-serif;
+  color: white;
+  background-color: rgb(60, 120, 189);
+}
+
+#close {
+  background-color: #e56240;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  width: 100%;
+  padding: 0 2rem 0 2rem;
+}
+
+.tab-item {
+  background-color: rgba(69, 117, 230, 0.5);
+  border: 2px inset rgb(17, 134, 230);
+  width: 15rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "supernatural_10_01", sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(233, 234, 218);
+  color: black;
+  border-bottom: 2px rgb(0, 0, 0) solid;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 0 0.4rem;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: grey;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: grey;
+  width: 45%;
+  z-index: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subnav-content li {
+  display: flex;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem;
+}
+
+.subnav-content li:hover {
+  background-color: #eee;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subnav:hover .subnav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subnav-content:hover {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.calculator-container {
+  border-radius: 3px;
+  padding: 1rem;
+  width: 100%;
+  background-color: rgb(236, 233, 216);
+  border: 2px rgb(0, 0, 0) solid;
+}
+
+.calculator-display {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+  height: 3rem;
+  border: 1px solid rgb(62, 62, 199);
+  font-family: "supernatural_10_01", sans-serif;
+}
+
+.button-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator-button {
+  width: 3rem;
+  height: 3rem;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f3f3ee;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-family: "PF Tempesta Seven", sans-serif;
+}
+
+.calculator-button:hover {
+  background-color: #e0e0e0;
+}
+
+.calculator-button:active {
+  background-color: #d4d4d4;
+}
+
+.application-container.visible {
+  display: block;
+  width: 15%;
+}
+
+.music-container {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px rgb(0, 0, 0) solid;
+}
+
+.music-player {
+  height: 100%;
+  width: 100%;
+  background: rgb(190, 122, 136);
+  background: linear-gradient(0deg, rgb(190, 122, 136) 0%, rgb(106, 107, 127) 100%);
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.back {
+  height: 4rem;
+  width: 4rem;
+  filter: invert(100%);
+}
+
+.music-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.square-button {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: white;
+}
+
+.square-button:hover {
+  transform: scale(120%);
+}
+
+.song-img {
+  width: 220px;
+  border: 5px solid white;
+}
+
+.music-player h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  margin-top: 20px;
+}
+
+.music-player p {
+  font-size: 1.2rem;
+  color: rgb(71, 68, 68);
+  margin-top: 1rem;
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 60%;
+  height: 6px;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: rgb(37, 90, 217);
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  border: 4px solid white;
+}
+
+.menu-controls {
+  display: flex;
+  align-items: center;
+  width: 50rem;
+}
+
+.menu-controls div {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background-color: white;
+  display: inline-flex;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.music-controls > div > img {
+  height: 3rem;
+  width: 3.5rem;
+  filter: invert(100%);
+  margin: 0 2rem;
+}
+
+.music-controls > div > img:hover {
+  transform: scale(120%);
+}
+
+.gallery-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-header > button {
+  background-color: rgb(236, 233, 216);
+  height: 2.5rem;
+  align-self: center;
+  width: 5rem;
+  font-family: "supernatural_10_01", sans-serif;
+  font-size: 1.1rem;
+}
+
+.gallery-header > button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.gallery-img {
+  height: 5rem;
+  width: 5rem;
+  border: 2px solid black;
+  margin: 1rem;
+}
+
+.gallery-img:hover {
+  border: 3px solid blue;
+}
+
+.view-img {
+  height: 35rem;
+  width: 35rem;
+  border: 2px solid black;
+}
+
+.gallery-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.gallery-container {
+  width: 100%;
+  background-color: rgb(236, 233, 216);
+  height: 100%;
+  border: 2px rgb(0, 0, 0) solid;
+}
+
+.img-container {
+  color: black;
+  font-family: "supernatural_10_01", sans-serif;
+  margin-bottom: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 96%;
+  background-image: url(../assets/xp-background.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-family: "supernatural_10_01", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

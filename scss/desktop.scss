@@ -1,0 +1,338 @@
+@use './partials/variables' as v;
+@use './partials/mixins.scss' as m;
+
+.left-container {
+    @include m.design-box;
+    height: 100%;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.icon-background {
+    @include m.design-box-3;
+    height: 35%;
+    border: none;
+}
+
+.menu-container {
+    @include m.design-box-2;
+    height: 65%;
+}
+
+
+.icon-background {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icons {
+    @include m.center-items;
+    flex-direction: column;
+}
+
+.menu-container {
+    display: none;
+    z-index: 1;
+  }
+  
+.show-menu  {
+    display: flex;
+    border-style: outset;
+    border-radius: 8px;
+  }
+
+
+.menu-header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.menu-heading {
+    display: flex;
+    height: 5rem;
+    @include m.blue-gradient; 
+    padding: 0.2rem;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 0.4rem;
+    color: white;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-heading > p {
+    text-shadow: 5px 5px 14px rgb(43, 40, 187);
+}
+
+#pfp {
+    height: 88%;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu-box {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.left-menu {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
+.right-menu {
+    width: 50%;
+    background-color: v.$light-blue;
+    height: 100%;
+}
+
+#menuFooter {
+    display: flex;
+    justify-content: end;
+    @include m.blue-gradient-reverse; 
+    height: 4rem;
+    color: white; 
+    padding-right: 0.5rem;
+}
+
+#menuFooter > p {
+    align-self: center;
+}
+
+.left-one-container {
+    border-bottom: 1px solid #a0b4cd;
+    padding-bottom: 0.6rem;
+}
+
+.left-one-sub-container {
+    display: flex;
+    height: 2.2rem;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    padding: 0.6rem 0 0 0.5rem;
+}
+
+.left-one-sub-container:hover {
+    background-color: rgb(73, 143, 235, 0.7); 
+}
+
+.icon-title {
+    display: flex;
+    align-items: center;
+    &--bold {
+        font-weight: 800;
+    }
+}
+
+#iconDescription {
+    font-size: 0.8rem;
+
+}
+
+.programs {
+    height: 2.5rem;
+    gap: 1rem;
+    @include m.center-items;
+}
+
+.programs:hover {
+    background-color: rgb(73, 143, 235, 0.7); 
+}
+
+
+#greenPrograms {
+    @include m.center-items;
+    height: 1.8rem;
+}
+
+.programs > p {
+    display: flex;
+    align-items: center;
+}
+
+.right-one-container {
+    border-bottom: 1px solid #a0b4cd;
+    padding-bottom: 1rem;
+}
+
+.right-one-sub-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.4rem 0 0 0.3rem;
+    font-size: 0.85rem;
+}
+
+.right-one-sub-container:hover {
+    background-color: rgb(73, 143, 235, 0.7); 
+}
+
+.right-menu-icon {
+    height: 30px
+}
+
+
+.icon-clicked {
+    background-color:rgb(73, 143, 235, 0.5);
+}
+
+// Hidden application container
+
+.application-container {
+    display: none; 
+    width: 100%;
+    align-self: center;
+    height: 70%;
+    width: 50%;
+    border-bottom: none;
+    position: absolute;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.app-menu {
+    background-color: v.$main-blue;
+    display: flex;
+    flex-direction: column;
+    height: 3rem;
+    width: 100%;
+    border: 2px rgb(0, 0, 0) solid; 
+}
+
+.application-sub-container {
+    height: 60%;
+    background-color: white;
+}
+
+.app-menu-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+// Application open/close buttons
+.app-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+    padding: 0.2rem;
+}
+
+.app-buttons > button {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: 0.2rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-family: 'PF Tempesta Seven', sans-serif;
+    color: white;
+    background-color: v.$border-blue-two;
+}
+
+// close button on apps
+#close {
+    background-color: #e56240;
+}
+
+
+// TABS on taskbar
+.tabs-container {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    width: 100%;
+    padding: 0 2rem 0 2rem;
+}
+
+.tab-item {
+    background-color: rgba(69, 117, 230, 0.5);
+    border: 2px inset v.$tray-blue;
+    width: 15rem;
+    color: white;
+    @include m.center-items;
+    font-family: "supernatural_10_01", sans-serif;
+}
+
+// Navbar for Applications
+.navbar {
+    overflow: hidden;
+    background-color: rgb(233 234 218);
+    color: black;
+    border-bottom: 2px rgb(0, 0, 0) solid; 
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 0 0.4rem;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: grey;
+  }
+  
+
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: grey;
+    width: 45%;
+    z-index: 1;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .subnav-content li {
+    display: flex;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 0.2rem;
+    
+  }
+
+  .subnav-content li:hover {
+    background-color: #eee;
+    color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .subnav:hover .subnav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subnav-content:hover {
+    display: flex;
+    flex-direction: row-reverse;
+  }

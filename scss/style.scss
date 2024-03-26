@@ -1,0 +1,29 @@
+@use './footer.scss';
+@use './desktop.scss';
+@use './calc.scss';
+@use './music.scss';
+@use './gallery.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 96%;
+    background-image: url(../assets/xp-background.webp);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: "supernatural_10_01", sans-serif;
+}
+

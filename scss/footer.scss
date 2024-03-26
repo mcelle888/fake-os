@@ -1,0 +1,70 @@
+@use './partials/variables' as v;
+@use './partials/mixins.scss' as m;
+
+footer {
+    background-color: v.$main-blue;
+    display:flex;
+    flex-direction: row;
+    height: 2.5rem;
+    border-top: 3px solid v.$border-blue-two;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.start-button {
+    display: flex;
+    height: 100%;
+    width: 6rem;
+    background-color: v.$button-green;
+    color: white;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'supernatural_10_01', sans-serif;
+    font-size: 1.2rem;
+    border: 2px solid #0a5d39;
+    border-radius: 0px 5px 5px 0px;
+    border-color: #0a5d39;
+    padding-right: 2rem;
+    padding-left: 1.5rem;
+}
+
+
+.windows-icon {
+    height: 100%;
+}
+
+.tray-container {
+    display: flex;
+    height: 100%;
+    gap: 1rem;
+    background-color: v.$tray-blue;
+    width: 15rem;
+    justify-content: space-between;
+    padding-left: 1.4rem;
+    border-left: 2px solid v.$border-blue-two;
+
+}
+
+.time-box {
+    color: white;
+    padding-right: 1rem;
+    align-self: center;
+    font-family: "VT323", monospace;
+    font-size: 1.2rem;
+    width: 5rem;
+}
+
+.icon-tray-container {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.icon-tray {
+    height: 70%;
+    padding-top: 0.2rem;
+}
+

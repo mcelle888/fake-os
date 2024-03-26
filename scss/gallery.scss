@@ -1,0 +1,59 @@
+
+@use './partials/variables' as v;
+@use './partials/mixins.scss' as m;
+
+.gallery-header {
+    @include m.center-items;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery-header > button {
+    background-color: v.$main-grey;
+    height: 2.5rem;
+    align-self: center;
+    width: 5rem;
+    font-family: 'supernatural_10_01', sans-serif;
+    font-size: 1.1rem;
+}
+
+.gallery-header > button:hover{
+    background-color: grey;
+    color: white;
+}
+
+.gallery-img {
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+    margin: 1rem;
+}
+
+.gallery-img:hover {
+    border: 3px solid blue;
+}
+
+.view-img {
+    height: 35rem;
+    width: 35rem;
+    border: 2px solid black;
+}
+
+.gallery-box {
+    @include m.center-items;
+    text-align: center;
+}
+
+.gallery-container {
+    width: 100%;
+    background-color: v.$main-grey;
+    height: 100%;
+    border: 2px rgb(0, 0, 0) solid; 
+}
+
+.img-container {
+    color: black;
+    font-family: 'supernatural_10_01', sans-serif;
+    margin-bottom: 2rem;
+}
